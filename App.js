@@ -24,8 +24,8 @@ export default function App() {
   return (
     <KeyboardAvoidingView
       style={styles.container}
-      behavior={Platform.OS === "ios" ? "padding" : "height"} // This condition ensures that the behavior is applied only for iOS. For Android, the behavior defaults to "height".
-      keyboardVerticalOffset={Platform.OS === "ios" ? 0 : 20} // Adjust the value as needed
+      behavior={Platform.OS === "ios" ? "padding" : "height"} 
+      keyboardVerticalOffset={Platform.OS === "ios" ? 0 : 20} 
     >      
     <TextInput
         ref={textInputRef}
